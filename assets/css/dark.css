@@ -1,0 +1,109 @@
+/* Dark mode général */
+.dark-mode {
+    background-color: #121212;
+    color: #e0e0e0;
+}
+
+.dark-mode .navbar,
+.dark-mode .offcanvas,
+.dark-mode footer {
+    background-color: #1f1f1f !important;
+    color: #e0e0e0;
+}
+
+.dark-mode .card {
+    background-color: #1c1c1c;
+    color: #e0e0e0;
+}
+
+.dark-mode .card-header {
+    background-color: #2c2c2c;
+    border-bottom: 1px solid #444;
+}
+
+.dark-mode .form-control,
+.dark-mode .form-select {
+    background-color: #2a2a2a;
+    color: #fff;
+    border: 1px solid #444;
+}
+
+.dark-mode .form-control::placeholder {
+    color: #aaa;
+}
+
+.dark-mode .btn {
+    border-color: #444;
+}
+
+.dark-mode .btn-outline-secondary {
+    color: #ddd;
+    border-color: #666;
+}
+
+.dark-mode .btn-outline-secondary:hover {
+    background-color: #444;
+}
+
+.dark-mode .alert {
+    background-color: #2c2c2c;
+    border-color: #444;
+    color: #ccc;
+}
+
+.dark-mode .badge {
+    opacity: 0.85;
+}
+
+/* Pagination */
+.dark-mode .page-link {
+    background-color: #1a1a1a;
+    color: #ccc;
+    border: 1px solid #444;
+}
+
+.dark-mode .page-item.active .page-link {
+    background-color: #0d6efd;
+    border-color: #0d6efd;
+    color: #fff;
+}
+
+/* Toast messages */
+.toast-message {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    padding: 12px 18px;
+    font-weight: 600;
+}
+
+/* Fade-in animation (si pas déjà dans page) */
+.fade-in {
+    animation: fadeIn 0.6s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to   { opacity: 1; transform: translateY(0); }
+}
+
+/* Footer collé en bas */
+html, body {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex: 1;
+}
+
+footer {
+    background-color: #1e1e1e;
+    color: #ccc;
+    padding: 1rem 0;
+    text-align: center;
+    font-size: 0.9rem;
+    border-top: 1px solid #444;
+}
